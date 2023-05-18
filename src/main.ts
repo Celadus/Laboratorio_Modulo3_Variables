@@ -3,13 +3,14 @@ const rock="🎸 Rock";
 const hardrock="🤘 Hard Rock";
 const clásica="🎼 Clásica";
 
+const estilos = "background-color: green; font-weigth: bold";
+
 interface Grupos {
     Nombre: string, 
     Año: number,
     Activo: boolean,
     Género: string,
 }
-
 
 
 const grupo1: Grupos = {
@@ -19,7 +20,7 @@ const grupo1: Grupos = {
     Activo: true,
     Género: clásica,
 }
-console.log(grupo1,);
+console.log(`%c${grupo1.Nombre}` , estilos, grupo1);
 
 
 const grupo2: Grupos = {
@@ -28,8 +29,7 @@ const grupo2: Grupos = {
     Activo: false,
     Género: rock,
 }
-console.log(grupo2);
-
+console.log(`%c${grupo2.Nombre}` , estilos, grupo2);
 
 const grupo3: Grupos = {
     Nombre: "ACDC",
@@ -37,7 +37,7 @@ const grupo3: Grupos = {
     Activo: true,
     Género: hardrock,
 }
-console.log(grupo3);
+console.log(`%c${grupo3.Nombre}` , estilos, grupo3);
 
 
 const grupo4: Grupos = {
@@ -46,8 +46,7 @@ const grupo4: Grupos = {
     Activo: false,
     Género: clásica,
 }
-console.log(grupo4);
-
+console.log(`%c${grupo4.Nombre}` , estilos, grupo4);
 
 const grupo5: Grupos = {
     Nombre: "The Rolling Stones",
@@ -55,4 +54,4 @@ const grupo5: Grupos = {
     Activo: true,
     Género: rock,
 }
-console.log(grupo5);
+console.log(`%c${grupo5.Nombre}` , estilos, grupo5);
